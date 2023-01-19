@@ -1,0 +1,8 @@
+ACTION=="add",
+SUBSYSTEM=="input",
+ATTR{name}=="TPPS/2 IBM TrackPoint",
+ATTR{device/sensitivity}="128",
+ATTR{device/speed}="97",
+ATTR{device/inertia}="0",
+ATTR{device/press_to_select}="0"
+
