@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "off"
+}

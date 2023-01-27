@@ -1,0 +1,36 @@
+// Place your key bindings in this file to override the defaults
+//windows: C:\Users\<UserName>\AppData\Roaming\Code\User\keybindings.json
+[
+    {
+        "key": "ctrl+1",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('${CLIPBOARD}: ', ${CLIPBOARD});"
+        }
+    },
+    {
+        "key": "ctrl+2",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('typeof(${CLIPBOARD}): ', typeof(${CLIPBOARD}));"
+        }
+    },
+    {
+        "key": "ctrl+3",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log();"
+        }
+    },
+    {
+        "key": "ctrl+4",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('${CLIPBOARD}: ', JSON.stringify(${CLIPBOARD}, null, 4));"
+        }
+    }
+]
