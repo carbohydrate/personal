@@ -33,6 +33,14 @@
         "args": {
             "snippet": "console.log('${CLIPBOARD}: ', JSON.stringify(${CLIPBOARD}, null, 4));"
         }
+    },
+    {
+        "key": "ctrl+5",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "import React from 'react';\r\n\r\ninterface ${CLIPBOARD}Props {\r\n\r\n}\r\n\r\nexport const ${CLIPBOARD}: React.FC<${CLIPBOARD}Props> = (props) => {\r\n\tconst {  } = props;\r\n\r\n\treturn (\r\n\t\t<></>\r\n\t);\r\n};\r\n"
+        }
     }
 ]
 
