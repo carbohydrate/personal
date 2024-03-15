@@ -101,3 +101,7 @@ git push -u origin fix_502
 // Closes #423 #421
 
 // working in a cloned repo.  change local to your own fork.  https://gist.github.com/jagregory/710671
+
+// tags
+git tag 1.0.1
+git push origin 1.0.1
