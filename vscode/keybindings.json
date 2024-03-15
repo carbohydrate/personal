@@ -7,7 +7,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {
-            "snippet": "console.log('${CLIPBOARD}: ', ${CLIPBOARD});"
+            "snippet": "console.log('${CLIPBOARD}:', ${CLIPBOARD});"
         }
     },
     {
