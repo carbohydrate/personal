@@ -1,13 +1,25 @@
 // Place your key bindings in this file to override the defaults
-//windows: C:\Users\<UserName>\AppData\Roaming\Code\User\keybindings.json
-//linux: ~/.config/Code/User/keybindings.json
+// windows: C:\Users\<UserName>\AppData\Roaming\Code\User\keybindings.json
+// linux: ~/.config/Code/User/keybindings.json
+
+// https://code.visualstudio.com/docs/getstarted/keybindings
+// https://code.visualstudio.com/api/references/when-clause-contexts
+// https://code.visualstudio.com/docs/languages/identifiers
 [
     {
         "key": "ctrl+1",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus && (editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == typescriptreact)",
         "args": {
             "snippet": "console.log('${CLIPBOARD}:', ${CLIPBOARD});"
+        }
+    },
+    {
+        "key": "ctrl+1",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceExtname == .gd",
+        "args": {
+            "snippet": "print('${CLIPBOARD}: ', ${CLIPBOARD});"
         }
     },
     {
@@ -43,4 +55,3 @@
         }
     }
 ]
-
