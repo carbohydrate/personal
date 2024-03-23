@@ -5,6 +5,9 @@
 // https://code.visualstudio.com/docs/getstarted/keybindings
 // https://code.visualstudio.com/api/references/when-clause-contexts
 // https://code.visualstudio.com/docs/languages/identifiers
+
+// "snippet": "std::cout << \"${CLIPBOARD} = \" << ${CLIPBOARD} << std::endl;"
+
 [
     {
         "key": "ctrl+1",
@@ -25,9 +28,17 @@
     {
         "key": "ctrl+2",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus && (editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == typescriptreact)",
         "args": {
             "snippet": "console.log('typeof(${CLIPBOARD}): ', typeof(${CLIPBOARD}));"
+        }
+    },
+    {
+        "key": "ctrl+2",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceExtname == .gd",
+        "args": {
+            "snippet": "print('typeof(${CLIPBOARD}): ', ${CLIPBOARD});"
         }
     },
     {
