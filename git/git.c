@@ -75,7 +75,7 @@ git checkout --theirs fileName.ts
 // show url of repo
 git remote -v
 
-// have not tried. But maybe set a repo to my fork?
+// Set a repo to my fork
 git remote set-url origin https://github.com/myusername/myrepo.git
 
 // create patch from a commit
