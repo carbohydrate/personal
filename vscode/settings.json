@@ -1,8 +1,17 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    // "workbench.colorTheme": "Default Dark+",
     "editor.renderWhitespace": "all",
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    // "terminal.integrated.defaultProfile.windows": "Git Bash",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.accessibilitySupport": "off",
-    "explorer.copyRelativePathSeparator": "/"
+    "window.title": "${dirty}${rootName}${separator}${activeEditorShort}${separator}${profileName}${separator}${appName}",
+    "editor.stickyScroll.enabled": false,
+    "editor.rulers": [
+        160
+    ],
+    "extensions.ignoreRecommendations": true,
+    "git.openRepositoryInParentFolders": "never",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
+    // "editor.accessibilitySupport": "off",
+    // "explorer.copyRelativePathSeparator": "/"
 }
